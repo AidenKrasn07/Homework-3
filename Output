@@ -1,1 +1,35 @@
+Stack Test
+Adding:
+15
+25
+35
+45
+55
+Top item: 
+55
+Removing: 
+55
+Removing: 
+45
+new top: 
+35
+Is stack empty?
+false
 
+Queue Test
+Adding:
+15
+25
+35
+45
+55
+Front item: 
+15
+Removing: 
+15
+Removing: 
+25
+New front: 
+35
+Is queue empty?
+false
