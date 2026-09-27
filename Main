@@ -1,0 +1,46 @@
+//Name: Aiden Krasnopolskiy
+//Language: Java
+//IDE: VS Code
+
+public class HW3 {
+    public static void main(String[] args) throws Exception {
+        //Stack Test
+        Stack a = new Stack (100);
+        int [] input = {15, 25, 35, 45, 55};
+        System.out.println("Stack Test");
+        System.out.println("Adding:");
+        for (int i = 0; i < input.length; i++) {
+            a.push(input[i]);
+            System.out.println(input[i]);
+        }
+        System.out.println("Top item: ");
+        System.out.println(a.peek());
+        System.out.println("Removing: ");
+        System.out.println(a.pop());
+        System.out.println("Removing: ");
+        System.out.println(a.pop());
+        System.out.println("new top: ");
+        System.out.println(a.peek());
+        System.out.println("Is stack empty?");
+        System.out.println(a.isEmpty());
+        //Queue Test
+        Queue b = new Queue (100);
+        int [] input2 = {15, 25, 35, 45, 55};
+        System.out.println("\nQueue Test");
+        System.out.println("Adding:");
+        for (int i = 0; i < input2.length; i++) {
+            b.enqueue(input2[i]);
+            System.out.println(input2[i]);
+        }
+        System.out.println("Front item: ");
+        System.out.println(b.peek());
+        System.out.println("Removing: ");
+        System.out.println(b.dequeue());
+        System.out.println("Removing: ");
+        System.out.println(b.dequeue());
+        System.out.println("New front: ");
+        System.out.println(b.peek());
+        System.out.println("Is queue empty?");
+        System.out.println(b.isEmpty());
+    }
+}
