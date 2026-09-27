@@ -1,1 +1,27 @@
+public class Stack {
+    private int [] stack;
+    private int top;
+    private int capacity;
 
+    public Stack(int size) {
+        stack = new int[size];
+        capacity = size;
+        top = -1;
+    } 
+    //Stack Methods
+    public void push(int value) {
+        top++;
+        stack [top] = value;
+    }
+    public int pop() {
+        int temp = stack [top];
+        top--;
+       return temp;
+    }
+    public int peek() {
+        return stack [top];
+    }
+    public boolean isEmpty() {
+        return (top == -1);
+    }    
+}
