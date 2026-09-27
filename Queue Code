@@ -1,1 +1,28 @@
-
+public class Queue {
+    private int [] queue;
+    private int front;
+    private int back;
+    private int capacity;
+    public Queue(int size) {
+        queue = new int[size];
+        capacity = size;
+        front = 0;
+        back = -1;
+    }
+    //Queue Methods
+    public void enqueue(int value) {
+        back++;
+        queue [back] = value;
+    }
+    public int dequeue() {
+        int temp = queue [front];
+        front++;
+       return temp;
+    }
+    public int peek() {
+        return queue [front];
+    }
+    public boolean isEmpty() {
+        return (front > back);
+    }
+}
